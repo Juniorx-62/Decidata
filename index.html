@@ -20,8 +20,8 @@
   .deck{ position:fixed; inset:0; overflow:hidden; }
   .track{ height:100%; will-change:transform; transition:transform .66s cubic-bezier(.76,0,.24,1); }
   .slide{
-    height:100vh; height:100dvh; overflow:hidden;
-    display:flex; flex-direction:column; justify-content:center;
+    height:100vh; height:100dvh; overflow-y:auto; overflow-x:hidden;
+    display:flex; flex-direction:column; justify-content:center; justify-content:safe center;
     padding:6.5vh 7vw;
     background:radial-gradient(1100px 600px at 88% -12%, #0e0e18 0%, transparent 55%), var(--bg);
   }
