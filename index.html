@@ -98,6 +98,13 @@
   #qrSlot{ display:none; position:absolute; right:7vw; bottom:9vh; background:#fff; border-radius:14px; padding:12px; text-align:center; box-shadow:0 12px 34px rgba(0,0,0,.5); z-index:5; }
   #qrSlot img{ width:138px; height:138px; display:block; }
   #qrSlot small{ color:#333; font-size:.7rem; display:block; margin-top:6px; }
+  .qrcard{ background:#fff; border-radius:18px; padding:16px; text-align:center; box-shadow:0 14px 40px rgba(0,0,0,.5); width:max-content; margin:0 auto; }
+  .qrcard img{ width:clamp(150px,20vw,210px); height:clamp(150px,20vw,210px); display:block; }
+  .qrcard small{ color:#333; font-size:.8rem; display:block; margin-top:10px; font-weight:600; }
+  .linkrow{ margin-top:20px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .linkrow .li{ width:34px; height:34px; border-radius:8px; background:#0a66c2; display:flex; align-items:center; justify-content:center; flex:none; }
+  .linkrow .li svg{ width:19px; height:19px; fill:#fff; }
+  .linkrow a{ font-size:clamp(.85rem,1.6vw,1.05rem); word-break:break-all; }
 
   .progress{ position:fixed; top:0; left:0; height:3px; width:0; z-index:60; background:linear-gradient(90deg,var(--accent),var(--accent2)); transition:width .5s ease; }
   .nav{ position:fixed; right:18px; bottom:16px; display:flex; gap:8px; z-index:60; }
@@ -283,9 +290,24 @@
     <p class="source" style="margin-top:18px">Decidata · Grupo 4 — "Do dado à decisão, em segundos."</p>
   </div></section>
 
+  <!-- 14 -->
+  <section class="slide"><div class="wrap">
+    <div class="kicker">Continue a conversa</div>
+    <h2>Leia o artigo completo no LinkedIn</h2>
+    <div class="media">
+      <div class="txt">
+        <p class="lead">Aprofundamos as ideias desta apresentação em um artigo: <span class="hl">"O dado nunca foi o problema. O tempo sempre foi."</span></p>
+        <div class="linkrow">
+          <span class="li"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V10.5H5.67v7.84h2.67zM7 9.3a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.04v-4.3c0-2.3-1.23-3.37-2.87-3.37-1.32 0-1.91.73-2.24 1.24v-1.06h-2.67v7.84h2.67v-4.38c0-.23.02-.46.09-.62.18-.46.6-.94 1.3-.94.92 0 1.29.7 1.29 1.73v4.21h2.67z"/></svg></span>
+          <a href="https://www.linkedin.com/pulse/o-dado-nunca-foi-problema-tempo-sempre-murillo-l%C3%A9cio-ageif/" target="_blank" rel="noopener">Ler no LinkedIn — "O dado nunca foi o problema. O tempo sempre foi."</a>
+        </div>
+      </div>
+      <div class="qrcard"><img alt="QR do artigo no LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAHMAQMAAABiFQrFAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADw0lEQVR4nO2cMXLjMAxF4VGh0kfwUXQ0+Wg6io+g0oXHWAEfgOhkd4uYmrj4KMIhw8c0PyAIghL5uc0a9rSeNZOqyGBDctl+3LfBB6Y9RM45XW9EifZEVwjy7KhctmbcxgddxBlbb+tdz4oG0+RElGhn9ORy3came4uGXW2io6ZoQ03YK1Gix6HuIl21Jt5xmxwNVrAeUaLHo9sGfjvpgslmJuXY1VdxRRMlehRau/pkAeWzNByqHSvYlH8HBESJ/iKqYa/yf6C3TUbP5B8BahhRoj3Rxiwy3ZuIBNTC1a1Z5X9GlOibaAQEmTS6oYdIwN3n6AN2RJJdwytRogegm9/cOpO6iwwvqujN1hPf/C/APE6toJYo0S5oZovOT0SSsQKyl7ddwyIZXl6QTSdKtCtqVkwd0n2wYTTO6uLO9kqU6AehoXvb6S0EqIBgQSLe5e93khWgDhmnEiXaHZU4G52SsYUuyB3JkOtpxrGthokSfR/17OWY/dSwxq04aoJupdoISSU6RIn2QsNMnMvo6CIlXktbmrCH/U4SHpYo0c6oadT8JrJBma8UPyK5F626NWTTT7uiiRLti9o+Hnfk+8XipL7pz/f0qbbst6sgokR/Ha18k8IBK+QfcepQZ3VMjkojHyRK9AA0z0aCOLUiU2vM9mIOokQPQKvkTROdtBoYpsm3hijRfmijYdXUsEem48uunneSfhU0a7urEyXaAQ0vqs/KHeFyfDGV+q5uY16lIYLKydQwUaK90UpbavNCrNLoMXnAxeIjVyBK9BPQGbVu4Y6/yl+a57bon5D4JEq0M7oiCF2lnkWM+bgsAoJYISMBVaJED0DriGTizdcRlXqXev6N8gw4U3+mQ5RoP7SxcKYLskVTJM5F4n0OjkiKhYgS7YvOqnknuYj/esFJaYkFkcucNeyJpDpRop3RtZVxMXCmN8kUksaLRSjaizWIEv0UtA7pqppLIDJtGpf//l/QJu+JEu2ELiLaSBmed8Kk61hxgUgdkSqoJUq0F4pBhKnhPsM8X4kju+AzV277O0miRHuhjU3hTMeXWVW3ZnYVOFohSrQvGmPxHQLLXk6WrxyaovQo+3X0pVyIKNF+6O5Mp6pG97Xu8Vg269ZaDX/d1YkS/U00MvD1mSvVugrSem7rgkctsA8SJXok+uVzvtlA6pd62nP9i4aJEu2FYtZUVRqRr4wVKlzdAwKiRPuh3uR1d1RpwPwePA5MUbd2jiLg70kjokTfQlOXzyoXgk170khxg6M4pOsj/h5Roh+B/tz+ALMkNaC39Q4aAAAAAElFTkSuQmCC"><small>Aponte a câmera do celular</small></div>
+    </div>
+  </div></section>
 </div></div>
 
-<div class="counter"><span id="cur">1</span> / <span id="tot">13</span></div>
+<div class="counter"><span id="cur">1</span> / <span id="tot">14</span></div>
 <div class="dots" id="dots"></div>
 <div class="nav"><button id="prev" aria-label="Anterior">‹</button><button id="next" aria-label="Próximo">›</button></div>
 
